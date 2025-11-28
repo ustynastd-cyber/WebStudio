@@ -1,0 +1,51 @@
+h1 {
+    background-color: rgb(69, 67, 67); 
+    height: 150px;
+    color: rgb(211, 211, 211);
+    text-align: center;
+    height: 120px;
+    top: 280px;
+    left: 452px;
+
+}
+:root {
+    --text-color: #05219f;
+    --alt-text-color: #0000ff;
+
+}
+.logo { 
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+span {
+    color: var(--alt-text-color);
+    color: #263881;
+    font-family: 'Raleway', sans-serif;
+
+}
+nav a {
+    color: var(--text-color);
+}
+button {
+    background-color: rgb(53, 87, 223);
+    color: rgb(210, 202, 202);
+    text-align: center;
+    width: 216px;
+
+    
+}
+footer {
+    background-color: rgb(82, 82, 82); 
+    height: 150px;
+    color: rgb(211, 211, 211);
+    text-align:start;
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.number {
+    color: #0f2568;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
