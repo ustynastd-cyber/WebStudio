@@ -48,4 +48,28 @@ footer {
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+.container {
+    max-width: 1630px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.Designer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #51515172;
+}
+.Developer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #51515172;
+}
+.UI-Designer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #51515172;
+}
+.Marketing {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #51515172;
+}
