@@ -34,14 +34,6 @@ button {
 
     
 }
-footer {
-    background-color: rgb(82, 82, 82); 
-    height: 150px;
-    color: rgb(211, 211, 211);
-    text-align:start;
-    padding-top: 20px;
-    font-family: 'Raleway', sans-serif;
-}
 .number {
     color: #0f2568;
 }
@@ -72,4 +64,18 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     color: #51515172;
+}
+.What-We-Do-Text {
+    text-align: center;
+
+}
+
+   
+footer {
+    background-color: rgb(82, 82, 82); 
+    height: 150px;
+    color: rgb(211, 211, 211);
+    text-align:start;
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
 }

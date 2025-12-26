@@ -7,8 +7,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./CSS/normalize.css">
-    <link rel="stylesheet" href="style111.css">
+<link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style111.css">
     <title>Cтудіо</title>
 </head>
 <body>
@@ -19,10 +19,10 @@
       <p class="email">info@devstudio.com</p>
       <p class="number">+38 096 111 11 11</p>
 <nav>
-    <ul>
-        <li><a href="#">Cтудіо</a></li>
-        <li><a href="./index2.html">Портфоліо</a></li>
-        <li><a href="#">Контакти</a></li>
+    <ul class="Nav-List">
+        <li class="Nav-Item" ><a href="#">Cтудіо</a></li>
+        <li class="Nav-Item" ><a href="./index2.html">Портфоліо</a></li>
+        <li class="Nav-Item" ><a href="#">Контакти</a></li>
     
     </ul>
 </nav>
@@ -41,119 +41,100 @@
 
     <section class="together">
         <div class="conteiner">
-<p>
+            <ul class="together-list">
+                <li>
+<p class="together-item">
                 УВАГА ДО ДЕТАЛЕЙ
             </p>
 
-            <p>
+            <p class="together-item-1">
         Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
     </p>
-        </div>
-    </section>
-      
-<section class="together">
-    <div class="conteiner">
 
-<p>
+    <p class="together-item">
         ПУНКТУАЛЬНІСТЬ
     </p>
-    
-    <p>
+
+    <p class="together-item-1">
         Ми завжди дотримуємося термінів і графіків, щоб забезпечити своєчасну реалізацію проектів.
     </p>
-    </div>
-    
-</section>
-    
-<section class="together">
-    <div class="conteiner">
- <p>
+
+    <p class="together-item">
         ПЛАНУВАННЯ
     </p>
+   <p class="together-item-1">
+       Так само консультація з широким активом значною мірою зумовлює.
+   </p>
 
-    <p>
-Так само консультація з широким активом значною мірою зумовлює.
-    </p>
-    </div>
-</section>
-   
-
-<section class="together">
-    <div class="conteiner">
-<p>
+<p class="together-item">
         СУЧАСНІ ТЕХНОЛОГІЇ
     </p>
 
-    <p>
+    <p    class="together-item-1">
 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
     </p>
-    </div>
-</section>
+                </li>
+            </ul>
+        </div>
+    </section>
     
 </section class="What-We-Do">
 <div class="conteiner">
-        </p> 
+        </p class="What-We-Do-Text"> 
                 Чим ми займаємось
         </p>
-<img src="img/img.png" alt="Дизайн">
-<img src="img/img (1).png" alt="Мобільні додатки">
-<img src="img/box 2.png" alt="Розробка сайтів">
+<img class="What-We-Do-Img" src="img/img.png" alt="Дизайн">
+<img class="What-We-Do-Img" src="img/img (1).png" alt="Мобільні додатки">
+<img class="What-We-Do-Img" src="img/box 2.png" alt="Розробка сайтів">
 </div>
 <section>
 
-<section class="Team">
-    <div class="conteiner">
-
-        <p>
-                Наша команда
-        </p>
-    </div>
-</section>
-
-    <section class="Card-Designer">
+    <section class="Team">
         <div class="conteiner">
-<img src="./img/img (6).png" alt=" Product Designer"> 
+             <p class="Team-Text">
+                Наша команда
+            </p>
+            <ul class="Team-List">
+        <li class="Team-Item">
+<img class="Team-Img" src="./img/img (6).png" alt=" Product Designer"> 
     <p class="Name-Designer">
         Ігор Дем'яненко
     </p>
     <p class="Designer">
         Product Designer
     </p>
-        </div>
-    </section>
+        </li>
 
-    <section class="Card-Developer">
-        <div class="conteiner">
-<img src="./img/img (7).png" alt="Frontend Developer">
+        <li class="Team-Item">
+<img class="Team-Img" src="./img/img (7).png" alt="Frontend Developer">
 <p class="Name-Developer">
     Ольга Рєпіна
 </p>
 <p class="Developer">
     Frontend Developer
 </p>
-            </div>
-            </section>
+        </li>
 
-    <section class="Card-Marketing">
-        <div class="conteiner">
-<img src="./img/img (8).png" alt="Marketing">
+<li class="Team-Item">
+<img class="Team-Img" src="./img/img (8).png" alt="Marketing">
 <p class="Name-Marketing">
     Микола Тарасов
 </p>
 <p class="Marketing">
     Marketing
 </p>
-            <div>
-    </section> 
-    <section class="Card-UI-Designer">
-        <div class="conteiner">
-<img src="./img/img (9).png" alt="UI Designer">
+</li>
+
+<li class="Team-Item">
+<img class="Team-Img" src="./img/img (9).png" alt="UI Designer">
 <p class="Name-UI-Designer">
     Михайло Єрмаков
 </p>
 <p class="UI-Designer">
     UI Designer
 </p>
+</li>
+            </ul>
         </div>
     </section>
     </main>
@@ -161,13 +142,13 @@
    <footer>
     <div class="conteiner">
 <p class="Logo"><span>Web</span>Studio</p>  
-<p>
+<p class="Footer-Text">
     м.Київ, пр-т Лесі Українки, 26
 </p>
-<p>
+<p class="Footer-Text-1">
      info@devstudio.com
 </p>
-<p>
+<p class="Footer-Text-1">
     +38 096 111 11 11
    </p>
     </div>
