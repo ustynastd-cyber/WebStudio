@@ -218,13 +218,57 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
-.feature-item {
-    max-width: 270px;
-    margin: 0 auto;
-    padding: 0 10px;
-    justify-content: space-between;
-    align-items: center;
-
+.feature-item-1::before{
+      content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  outline: auto;
+  background-size: 70px;
+  background-color: rgb(0, 0, 0);
+  background: url(../img/antenna\ 1.png)
+  no-repeat center;
+}
+.feature-item-2::before{
+      content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  outline: auto;
+  background-size: 70px;
+  background-color: rgb(0, 0, 0);
+  background: url(../img/clock\ 1.png)
+  no-repeat center;
+}
+.feature-item-3::before{
+      content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  outline: auto;
+  background-size: 70px;
+  background-color: rgb(133, 133, 133);
+  background: url(../img/diagram\ 1.png)
+  no-repeat center;
+}
+.feature-item-3::before{
+      content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  outline: auto;
+  background-size: 70px;
+  background-color: rgb(133, 133, 133);
+  background: url(../img/astronaut\ 1.png)
+  no-repeat center;
 }
 ul {
     list-style: none;
