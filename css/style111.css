@@ -5,6 +5,7 @@ h1 {
     height: 120px;
     top: 280px;
     left: 452px;
+    font-size: 44px;
 }
 :root {
     --text-color: #05219f;
@@ -45,8 +46,8 @@ body {
 }
 .Developer {
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    color: #51515172;
+    font-size: 20px; 
+    color: #51515172;  
 }
 .UI-Designer {
     font-family: 'Raleway', sans-serif;
@@ -58,9 +59,6 @@ body {
     font-size: 20px;
     color: #51515172;
 }
-
-
-   
 footer {
     background-color: #2F303A; 
     height: 180px;
@@ -98,6 +96,7 @@ ul {
     padding: 220px 0;
     text-align: center;
     min-width: 1600px;
+    background: url(../img/Img\ \(19\).png);
 }
 .Title {
     max-width: 696px;
@@ -137,6 +136,7 @@ ul {
     text-align: center;
     border: 1px solid #e0e0e0;
     background-color: #ffffff;
+     box-shadow: 5px 5px 5px 0px lightgray;
 }
 .Team-Img{
     width: 300px;
@@ -196,18 +196,21 @@ ul {
     display: grid;
     flex-direction: column;
     border: 1px solid #e0e0e0;
-    
+}
+.portfolio-card:nth-child(1){
+    box-shadow: 5px 5px 5px 0px grey;
 }
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin: 0 auto;
+    padding: 0 85px;
   }
   .features{
       max-width: 1170px;
       min-height: 98px;
-      padding: 60px 0;
+      padding: 170px 80px;
     margin: 0 auto;
     display: grid;
   }
@@ -218,61 +221,59 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
-.feature-item-1::before{
-      content: "";
+.feature-item {
+   max-width: 270px;
+   height: 80px;
+   position: relative;
+   padding-top: 20px;
+}
+.feature-item:nth-child(1)::before{
+  content: "";
   position: absolute;
   top: -100px;
   left: 0;
-  width: 100%;
-  height: 100px;
-  outline: auto;
+  width: 270px;
+  height: 120px;
   background-size: 70px;
-  background-color: rgb(0, 0, 0);
+  background-color: #F5F4FA;
   background: url(../img/antenna\ 1.png)
-  no-repeat center;
+  no-repeat center, linear-gradient(0deg, #F5F4FA);
 }
-.feature-item-2::before{
-      content: "";
+.feature-item:nth-child(2)::before{
+  content: "";
   position: absolute;
   top: -100px;
   left: 0;
-  width: 100%;
-  height: 100px;
-  outline: auto;
+  width: 270px;
+  height: 120px;
   background-size: 70px;
-  background-color: rgb(0, 0, 0);
+  background-color: #F5F4FA;
   background: url(../img/clock\ 1.png)
-  no-repeat center;
+  no-repeat center, linear-gradient(0deg, #F5F4FA);
 }
-.feature-item-3::before{
-      content: "";
+.feature-item:nth-child(3)::before{
+  content: "";
   position: absolute;
   top: -100px;
   left: 0;
-  width: 100%;
-  height: 100px;
-  outline: auto;
+  width: 270px;
+  height: 120px;
   background-size: 70px;
-  background-color: rgb(133, 133, 133);
+  background-color: #F5F4FA;
   background: url(../img/diagram\ 1.png)
-  no-repeat center;
+  no-repeat center, linear-gradient(0deg, #F5F4FA);
 }
-.feature-item-3::before{
-      content: "";
+.feature-item:nth-child(4)::before{
+  content: "";
   position: absolute;
   top: -100px;
   left: 0;
-  width: 100%;
-  height: 100px;
-  outline: auto;
+  width: 270px;
+  height: 120px;
   background-size: 70px;
-  background-color: rgb(133, 133, 133);
+  background-color: #F5F4FA;
   background: url(../img/astronaut\ 1.png)
-  no-repeat center;
-}
-ul {
-    list-style: none;
-    padding: 0;
+  no-repeat center, linear-gradient(0deg, #F5F4FA);
 }
 .Servises {
    max-width: 1170px;
