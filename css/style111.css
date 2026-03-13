@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 
 h1 {
     height: 150px;
@@ -14,14 +18,15 @@ h1 {
 }
 .logo { 
     display: block;
-    font-size: 30px;
+    font-size: 26px;
     font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     color: black;
     margin-right: 93px;
 }
 span {
     color: var(--alt-text-color);
-    color: #2196f3;
+    color: var(--alt-text-color);
     font-family: 'Raleway', sans-serif;
 
 }
@@ -29,8 +34,13 @@ nav a {
     color: var(--text-color);
 }
 .number {
-    color: #2196f3;
+    color: var(--alt-text-color);
 }
+
+.number:hover {
+    color: #757575;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -59,6 +69,49 @@ body {
     font-size: 20px;
     color: #51515172;
 }
+
+.card-svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+} 
+
+.card-svg-1{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+} 
+
+.card-svg-1:hover{
+    background-color: var(--alt-text-color);
+    fill: #ffffff;
+    border-radius: 50%;
+} 
+
+.regular-clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 200px;
+    flex-direction: column;
+}
+
+.client {
+    display: flex;
+    gap: 30px;
+    font-size: 36px;
+    padding: 60px 0;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-svg {
+    width: 106px;
+    height: 60px;
+    outline: #AFB1B8 1px solid;
+}
+
 footer {
     background-color: #2F303A; 
     height: 180px;
@@ -73,6 +126,13 @@ header>.conteiner {
     justify-content: space-between;
     align-items: center;
 }
+
+.header-icon {
+    width: 16px;
+    height: 12px;
+    margin-left: -15px;
+}
+
 nav {
     max-width: 1600px;
 }
@@ -110,9 +170,8 @@ ul {
    padding: 0 32px;
    min-width: 216px;
    height: 50px;
-   background-color: #2196f3;
+   background-color: var(--alt-text-color);
    color: #ffffff;
-   border: none;
    border-radius: 4px;
    font-size: 16px;
    font-weight: 700;
@@ -165,7 +224,7 @@ ul {
     align-items: center;
 }
 .button-blue{
-    background-color: #2196f3;
+    background-color: var(--alt-text-color);
     color: #ffffff;
     border: none;
     border-radius: 4px;
