@@ -352,10 +352,31 @@ ul {
     margin: 0 auto;
     align-items: center;
     gap: 20px;
+    position: relative;
 }
 .Servises-Title{
     margin: 0 auto;
     max-width: 696px;
     text-align: center;
     
+}
+
+.Servises-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
 }
