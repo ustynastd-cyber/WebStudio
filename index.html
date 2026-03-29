@@ -40,7 +40,28 @@
     <div class="conteiner">
 <h1 class="Title">
     Eфективні рішення для нашого бізнесу
-    <button class="btn" type="button">Замовити послугу</button>
+    <button class="btn" type="button" onclick="openModal()">Замовити послугу</button>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    
+    <h2>Залиште свої дані, ми вам передзвонимо</h2>
+    
+    <input type="text" placeholder="Ім'я">
+    <input type="tel" placeholder="Телефон">
+    <input type="email" placeholder="Пошта">
+    
+    <textarea placeholder="Введіть текст"></textarea>
+
+    <label class="checkbox">
+      <input type="checkbox">
+      Погоджуюсь з розсилкою та приймаю <a href="#">Умови договору</a>
+    </label>
+
+    <button class="submit">Відправити</button>
+  </div>
+</div>
    
 </h1>
     </div>
@@ -269,5 +290,6 @@
    </p>
     </div>
    </footer>
+    <script src="./js/HW-modal.js"></script>
 </body>
 </html>
