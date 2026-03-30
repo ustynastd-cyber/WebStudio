@@ -99,30 +99,41 @@ body {
 .card-svg {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
-} 
+    fill: #757575;
+}
 
-.card-svg-1{
+.card-svg-1 {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
-} 
-
-.card-svg-1{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #F5F4FA;
+    fill: #757575;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-svg-1:hover{
-    background-color: var(--alt-text-color);
+.card-svg-1:hover {
+    background-color: #2196f3;
     fill: #ffffff;
-    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
 } 
 
 .regular-clients {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 200px;
+    padding: 60px 15px;
     flex-direction: column;
 }
 
@@ -153,7 +164,7 @@ footer {
     color: rgb(211, 211, 211);
     text-align: left;
     font-family: 'Raleway', sans-serif;
-    padding: 35px 200px;
+    padding: 35px 15px;
     max-width: 1600px;
 }
 
@@ -241,6 +252,45 @@ footer .newsletter-form button:active {
     transform: translateY(0);
 }
 
+footer .footer-social {
+    min-width: 250px;
+}
+
+footer .footer-social h3 {
+    margin: 0 0 16px;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .social-link:hover {
+    background-color: #2196f3;
+}
+
+footer .social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}
+
 header>.conteiner {
     display: flex;
     justify-content: space-between;
@@ -277,7 +327,7 @@ ul {
     text-align: center;
     min-width: 1600px;
     background: url(../img/Img\ \(19\).png);
-    
+    margin-bottom: 60px;
 }
 
 .modal {
@@ -292,18 +342,10 @@ ul {
   animation: fadeIn 0.3s ease-in-out;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .modal-content {
   background: white;
-  width: 450px;
+  width: 90%;
+  max-width: 450px;
   margin: 5% auto;
   padding: 40px 30px;
   border-radius: 8px;
@@ -311,17 +353,6 @@ ul {
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   animation: slideDown 0.3s ease-in-out;
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .modal-content h2 {
@@ -467,20 +498,21 @@ ul {
    transform: translateY(0);
 }
 .Team{
-    gap: 10px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     background-color: #F5F4FA;
     border: 1px solid #e0e0e0;
-    padding: 60px 200px;
+    padding: 60px 0;
 }
 .Team-Title {
     margin: 0 auto;
     max-width: 696px;
     text-align: center;
-
+    gap: 10px;
 }
 .Card{
     text-align: center;
-    border: 1px solid #e0e0e0;
+    border: none;
     background-color: #ffffff;
      box-shadow: 5px 5px 5px 0px lightgray;
 }
@@ -655,13 +687,13 @@ ul {
     flex-wrap: wrap;
     gap: 30px;
     margin: 0 auto;
-    padding: 0 85px;
+    padding: 0 15px;
     justify-content: center;
 }
   .features{
       max-width: 1170px;
       min-height: 98px;
-      padding: 170px 80px;
+      padding: 60px 15px;
     margin: 0 auto;
     display: grid;
   }
@@ -671,160 +703,6 @@ ul {
     gap: 30px;
     justify-content: space-between;
     align-items: center;
-}
-@media (max-width: 1200px) {
-    body {
-        font-size: 14px;
-    }
-    .conteiner,
-    .container {
-        padding: 0 16px;
-    }
-    header>.conteiner,
-    .footer-content,
-    .Team,
-    .regular-clients,
-    .portfolio-cards {
-        padding: 25px 16px;
-    }
-
-    .Nav-List {
-        gap: 16px;
-    }
-    .contacts {
-        gap: 20px;
-    }
-    .Hero {
-        padding: 160px 0 120px;
-        min-width: auto;
-        background-size: cover;
-    }
-    .Title {
-        font-size: 36px;
-    }
-    .Team-List,
-    .feature-list,
-    .portfolio-list,
-    .Servises-List {
-        gap: 12px;
-    }
-    .Team-Img,
-    .portfolio-card,
-    .Servises-Item {
-        width: auto;
-        min-width: auto;
-    }
-    .Team-Img {
-        width: 260px;
-        height: 260px;
-    }
-}
-
-@media (max-width: 900px) {
-    .header-icon {
-        width: 14px;
-        height: 10px;
-    }
-    .logo {
-        font-size: 22px;
-    }
-    .Nav-List {
-        flex-wrap: wrap;
-        gap: 12px;
-        justify-content: center;
-    }
-    .contacts {
-        gap: 12px;
-    }
-    .Hero {
-        padding: 130px 0 95px;
-    }
-    .Title {
-        font-size: 32px;
-    }
-    .feature-list,
-    .Team-List,
-    .portfolio-list,
-    .Servises-List,
-    .regular-clients > .conteiner {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-    .Team {
-        padding: 30px 15px;
-    }
-    .Team-Img {
-        width: 100%;
-        height: auto;
-        min-height: 200px;
-    }
-    .portfolio-card,
-    .Servises-Item {
-        width: 100%;
-        height: auto;
-    }
-    .portfolio-img,
-    .Servises-Img {
-        height: 220px;
-    }
-    .buttons {
-        padding: 24px 0;
-    }
-    .button,
-    .button-blue {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-    footer {
-        padding: 24px 16px;
-    }
-    .footer-content {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .footer-newsletter {
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 640px) {
-    .Hero {
-        padding: 110px 0 80px;
-    }
-    .Title {
-        font-size: 28px;
-    }
-    .contacts,
-    .Nav-List {
-        justify-content: center;
-    }
-    .client,
-    .feature-item,
-    .Team-List,
-    .portfolio-list,
-    .Servises-List,
-    .regular-clients > .conteiner {
-        grid-template-columns: 1fr;
-    }
-    .Service-Item,
-    .portfolio-card,
-    .Team-Img,
-    .client-svg {
-        width: 100%;
-        height: auto;
-    }
-    .portfolio-img,
-    .Servises-Img {
-        height: 190px;
-    }
-    .footer-newsletter h3 {
-        font-size: 18px;
-    }
-    .footer-newsletter input,
-    .footer-newsletter button {
-        font-size: 14px;
-    }
 }
 
 .feature-item {
@@ -904,18 +782,14 @@ ul {
 }
 .Servises-Item {
     flex: 1 1 calc(33.333% - 13.333px);
-    min-width: 260px;
-    height: 320px;
+    min-width: 370px;
+    width: 370px;
+    height: 294px;
     position: relative;
     overflow: hidden;
-    border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.16);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.Servises-Item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 28px rgba(0,0,0,0.2);
-}
+
 .Servises-Item::before {
     content: "";
     position: absolute;
@@ -951,10 +825,5 @@ ul {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.Servises-Item:hover .Servises-Img {
-    transform: scale(1.05);
 }
 
