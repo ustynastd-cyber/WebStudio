@@ -1,0 +1,29 @@
+.regular-clients {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+    flex-direction: column;
+}
+
+.client {
+    display: flex;
+    gap: 30px;
+    font-size: 36px;
+    padding: 60px 0;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-svg {
+    width: 106px;
+    height: 60px;
+    outline: #AFB1B8 1px solid;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        filter: brightness(0) saturate(100%) invert(56%) sepia(93%) saturate(1352%) hue-rotate(174deg) brightness(92%) contrast(101%);
+    }
+}
