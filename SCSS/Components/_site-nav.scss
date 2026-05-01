@@ -13,7 +13,7 @@ nav {
             bottom: -5px;
             width: 100%;
             height: 2px;
-            background-color: $alt-text-color;
+            background-color: var(alt-text-color);
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -25,7 +25,7 @@ nav {
                 transform: scaleX(1);
             }
 
-            color: $alt-text-color;
+            color: var(alt-text-color);
         }
     }
 }

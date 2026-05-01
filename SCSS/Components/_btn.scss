@@ -35,7 +35,7 @@
 }
 
 .button-blue {
-    background-color: $alt-text-color;
+    background-color: var(alt-text-color);
     color: #ffffff;
     border: none;
     border-radius: 4px;
