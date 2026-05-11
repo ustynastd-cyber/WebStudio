@@ -1,0 +1,39 @@
+// Reusable mixins for common style patterns
+
+@mixin transition-default($properties...) {
+  transition: #{join($properties, ", ")} 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin button-style($bg, $color, $hover-bg, $active-bg: null, $padding: 12px 20px, $font-size: 14px, $font-weight: 500) {
+  border: none;
+  border-radius: 4px;
+  padding: $padding;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  cursor: pointer;
+  background-color: $bg;
+  color: $color;
+  @include transition-default(background-color, color, transform, box-shadow);
+
+  &:hover {
+    background-color: $hover-bg;
+  }
+
+  @if $active-bg != null {
+    &:active {
+      background-color: $active-bg;
+    }
+  }
+}
+
+@mixin form-control {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  @include transition-default(border-color, box-shadow);
+}

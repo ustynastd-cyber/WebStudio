@@ -1,6 +1,7 @@
 .hero__button {
     display: grid;
     align-items: center;
+    justify-content: center;
     padding: 0 32px;
     min-width: 216px;
     height: 50px;
@@ -10,9 +11,8 @@
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
-    justify-content: center;
     margin: 0 auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition-default(background-color, transform);
 
     &:hover {
         background-color: #1976d2;
@@ -34,17 +34,17 @@
     flex-wrap: wrap;
 }
 
+.portfolio-filter__button--active,
+.portfolio-filter__button {
+    @extend %button-base;
+    font-size: 16px;
+    padding: 6px 22px;
+    @include transition-default(background-color, color, box-shadow);
+}
+
 .portfolio-filter__button--active {
     background-color: var(--alt-text-color);
     color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 6px 22px;
-    margin: 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
         background-color: #1976d2;
@@ -55,14 +55,6 @@
 .portfolio-filter__button {
     background-color: #F5F4FA;
     color: #212121;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 6px 22px;
-    margin: 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &.active {
