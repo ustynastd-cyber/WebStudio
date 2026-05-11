@@ -32,6 +32,19 @@ header > .container {
     width: 100%;
 }
 
+@include max-width($breakpoint-md) {
+    .header__nav-list {
+        gap: 10px;
+    }
+}
+
+@include max-width($breakpoint-sm) {
+    .header__nav-list {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
 .header__nav-item a {
     position: relative;
     font-family: "Roboto", sans-serif;
@@ -40,6 +53,12 @@ header > .container {
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.2s ease;
+}
+
+@include max-width($breakpoint-sm) {
+    .header__nav-item a {
+        font-size: 0.85rem;
+    }
 }
 
 .header__nav-item a::after {
@@ -73,10 +92,29 @@ header > .container {
     width: 100%;
 }
 
+@include max-width($breakpoint-md) {
+    .header__contacts {
+        gap: 12px;
+    }
+}
+
+@include max-width($breakpoint-sm) {
+    .header__contacts {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
 .header__contacts li {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+@include max-width($breakpoint-sm) {
+    .header__contacts li {
+        justify-content: center;
+    }
 }
 
 .header__contact-icon {

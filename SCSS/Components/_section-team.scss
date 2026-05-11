@@ -1,6 +1,5 @@
 .team {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
     background-color: #F5F4FA;
     border: 1px solid #e0e0e0;
     padding: 60px 0;
@@ -11,10 +10,12 @@
     max-width: 696px;
     text-align: center;
     gap: 10px;
+    padding: 0 20px;
 }
 
 .team__member-image {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 6px;
@@ -28,4 +29,15 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
+}
+
+@include max-width($breakpoint-md) {
+    .team__list {
+        flex-direction: column;
+    }
+    
+    .team__member-image {
+        width: 100%;
+    }
 }

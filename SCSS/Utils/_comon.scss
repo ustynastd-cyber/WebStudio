@@ -38,9 +38,22 @@ h1 {
 }
 
 .container {
-    max-width: 1630px;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+    width: 100%;
+}
+
+@include max-width($breakpoint-md) {
+    .container {
+        padding: 0 12px;
+    }
+}
+
+@include max-width($breakpoint-sm) {
+    .container {
+        padding: 0 10px;
+    }
 }
 
 span {

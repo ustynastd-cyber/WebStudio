@@ -10,7 +10,7 @@ footer {
 .footer__newsletter-form {
     display: flex;
     gap: 10px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     input,
     button {
@@ -22,7 +22,7 @@ footer {
 
     input {
         min-width: 240px;
-        flex: 1;
+        flex: 1 1 240px;
         padding: 12px 14px;
         border: 1px solid #4e4f5f;
         background: rgba(255, 255, 255, 0.06);
@@ -41,6 +41,7 @@ footer {
 
     button {
         @include button-style(#2196f3, #ffffff, #1976d2, #1565c0);
+        flex: 0 0 auto;
 
         &:hover {
             transform: translateY(-1px);
@@ -48,6 +49,21 @@ footer {
 
         &:active {
             transform: translateY(0);
+        }
+    }
+}
+
+@include max-width($breakpoint-md) {
+    .footer__newsletter-form {
+        flex-direction: column;
+        
+        input {
+            width: 100%;
+            min-width: 100%;
+        }
+        
+        button {
+            width: 100%;
         }
     }
 }
