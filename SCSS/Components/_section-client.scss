@@ -1,13 +1,13 @@
-.regular-clients {
+.clients {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 15px;
+    padding: 60px 0;
     flex-direction: column;
 }
 
-.client {
+.clients__title {
     display: flex;
     gap: 30px;
     font-size: 36px;
@@ -17,7 +17,7 @@
     align-items: center;
 }
 
-.client-svg {
+.clients__logo {
     width: 106px;
     height: 60px;
     outline: #AFB1B8 1px solid;

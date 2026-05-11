@@ -1,19 +1,24 @@
-.Designer,
-.Developer,
-.UI-Designer,
-.Marketing {
+.team__member-role {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     color: #51515172;
 }
 
-.card-svg {
+.team__member-social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.team__member-social-link {
     width: 20px;
     height: 20px;
     fill: #757575;
 }
 
-.card-svg-1 {
+.team__member-social-link--primary {
     width: 20px;
     height: 20px;
     padding: 12px;

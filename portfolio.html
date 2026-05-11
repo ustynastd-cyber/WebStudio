@@ -11,122 +11,122 @@
 </head>
 <body>
     <header>
-        <div class="conteiner">
- <a href="#" class="logo"><span>Web</span>Studio</a>
+        <div class="container">
+ <a href="#" class="header__logo"><span>Web</span>Studio</a>
 <nav>
-    <ul class="Nav-List">
-        <li class="Nav-Item" ><a href="./index.html">Cтудіо</a></li>
-        <li class="Nav-Item" ><a href="#" class="active">Портфоліо</a></li>
-        <li class="Nav-Item" ><a href="#">Контакти</a></li>
+    <ul class="header__nav-list">
+        <li class="header__nav-item" ><a href="./index.html">Cтудіо</a></li>
+        <li class="header__nav-item" ><a href="#" class="header__nav-link header__nav-link--active">Портфоліо</a></li>
+        <li class="header__nav-item" ><a href="#">Контакти</a></li>
     
     </ul>
 </nav>
-<ul class="contacts">
-        <li><a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="phone">+38 096 111 11 11</a></li>
+<ul class="header__contacts">
+        <li><a href="mailto:info@devstudio.com" class="header__contact-link header__contact-link--email">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111" class="header__contact-link header__contact-link--phone">+38 096 111 11 11</a></li>
     </ul>
         </div>
     </header>
     <main>
-    <section class="buttons">
-        <div class="conteiner">
-<button class="button-blue active" type="button" data-filter="All">Усі</button>
-<button class="button" type="button" data-filter="Web-sites">Веб-сайти</button>
-<button class="button" type="button" data-filter="Apps">Додатки</button>
-<button class="button" type="button" data-filter="Design">Дизайн</button>
-<button class="button" type="button" data-filter="Marketing">Маркетинг</button>
+    <section class="portfolio-filter">
+        <div class="container">
+<button class="portfolio-filter__button portfolio-filter__button--active" type="button" data-filter="All">Усі</button>
+<button class="portfolio-filter__button" type="button" data-filter="Web-sites">Веб-сайти</button>
+<button class="portfolio-filter__button" type="button" data-filter="Apps">Додатки</button>
+<button class="portfolio-filter__button" type="button" data-filter="Design">Дизайн</button>
+<button class="portfolio-filter__button" type="button" data-filter="Marketing">Маркетинг</button>
         </div>
 </section>
 
-<section class="portfolio-cards">
-    <div class="conteiner">
-        <ul class="portfolio-list">
-            <li class="portfolio-card" data-category="Web-sites">
-<img class="portfolio-img" src="./img/img (10).png" alt="technologist">
-<div class="portfolio-hover-content"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
-        <h3 class="portfolio-text">
+<section class="portfolio">
+    <div class="container">
+        <ul class="portfolio__list">
+            <li class="portfolio__item" data-category="Web-sites">
+<img class="portfolio__image" src="./img/img (10).png" alt="technologist">
+<div class="portfolio__overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
+        <h3 class="portfolio__title">
             Технокряк
         </h3>
-        <p class="portfolio-title">
+        <p class="portfolio__subtitle">
             Веб-сайт
         </p>
             </li>
-            <li class="portfolio-card" data-category="Design">
-                <img class="portfolio-img" src="./img/img (11).png" alt="poster">
-                <div class="portfolio-overlay-text">Дивитися більше</div>
-                <h3 class="portfolio-text">
+            <li class="portfolio__item" data-category="Design">
+                <img class="portfolio__image" src="./img/img (11).png" alt="poster">
+                <div class="portfolio__overlay-text">Дивитися більше</div>
+                <h3 class="portfolio__title">
                    Постер New Orlean vs Golden Star 
                 </h3>
-                <p class="portfolio-title">
+                <p class="portfolio__subtitle">
                     Дизайн
                 </p>
             </li>
-             <li class="portfolio-card" data-category="Apps">
-                <img class="portfolio-img" src="./img/img (12).png" alt="restoran">
-                <div class="portfolio-overlay-text">Дивитися більше</div>
-                <h3 class="portfolio-text">
+             <li class="portfolio__item" data-category="Apps">
+                <img class="portfolio__image" src="./img/img (12).png" alt="restoran">
+                <div class="portfolio__overlay-text">Дивитися більше</div>
+                <h3 class="portfolio__title">
                     Ресторан Seafood
                 </h3>
-                <p class="portfolio-title">
+                <p class="portfolio__subtitle">
                   Додаток  
                 </p>
             </li>
-             <li class="portfolio-card" data-category="Marketing">
-                <img class="portfolio-img" src="./img/img (13).png" alt="progect prime">
-                <div class="portfolio-overlay-text">Дивитися більше</div>
-                <h3 class="portfolio-text">
+             <li class="portfolio__item" data-category="Marketing">
+                <img class="portfolio__image" src="./img/img (13).png" alt="progect prime">
+                <div class="portfolio__overlay-text">Дивитися більше</div>
+                <h3 class="portfolio__title">
                     Проєкт Prime
                 </h3>
-                <p class="portfolio-title">
+                <p class="portfolio__subtitle">
                     Маркетинг
                 </p>
             </li>
-             <li class="portfolio-card" data-category="Apps">
-                <img class="portfolio-img" src="./img/img (14).png" alt="progect boxes">
-                <div class="portfolio-overlay-text">Дивитися більше</div>
-                <h3 class="portfolio-text">
+             <li class="portfolio__item" data-category="Apps">
+                <img class="portfolio__image" src="./img/img (14).png" alt="progect boxes">
+                <div class="portfolio__overlay-text">Дивитися більше</div>
+                <h3 class="portfolio__title">
                     Проєкт Boxes
                 </h3>
-                <p class="portfolio-title">
+                <p class="portfolio__subtitle">
                     Додаток
                 </p>
             </li>
-             <li class="portfolio-card" data-category="Web-sites">
-                <img class="portfolio-img" src="./img/img (15).png" alt="inspiration">
-                <div class="portfolio-overlay-text">Дивитися більше</div>
-                <h3 class="portfolio-text">
+             <li class="portfolio__item" data-category="Web-sites">
+                <img class="portfolio__image" src="./img/img (15).png" alt="inspiration">
+                <div class="portfolio__overlay-text">Дивитися більше</div>
+                <h3 class="portfolio__title">
                     Inspiration has no Borders
                 </h3>
-                <p class="portfolio-title">
+                <p class="portfolio__subtitle">
                   Веб-сайт  
                 </p>
             </li>
-             <li class="portfolio-card" data-category="Design">
-                <img class="portfolio-img" src="./img/img (16).png" alt="limited edition">
-                <div class="portfolio-overlay-text">Дивитися більше</div>
-                <h3 class="portfolio-text">
+             <li class="portfolio__item" data-category="Design">
+                <img class="portfolio__image" src="./img/img (16).png" alt="limited edition">
+                <div class="portfolio__overlay-text">Дивитися більше</div>
+                <h3 class="portfolio__title">
                     Видання Limited Edition
                 </h3>
-                <p class="portfolio-title">
+                <p class="portfolio__subtitle">
                     Дизайн 
                 </p>
             </li>
-             <li class="portfolio-card" data-category="Marketing">
-                <img class="portfolio-img" src="./img/img (17).png" alt="progect lab">
-                <div class="portfolio-overlay-text">Дивитися більше</div>
-                <h3 class="portfolio-text">
+             <li class="portfolio__item" data-category="Marketing">
+                <img class="portfolio__image" src="./img/img (17).png" alt="progect lab">
+                <div class="portfolio__overlay-text">Дивитися більше</div>
+                <h3 class="portfolio__title">
                    Проєкт LAB 
                 </h3>
-                <p class="portfolio-title">
+                <p class="portfolio__subtitle">
                     Маркетинг
                 </p>
             </li>
-             <li class="portfolio-card">
-                <img class="portfolio-img" src="./img/img (18).png" alt="growing business">
-                <h3 class="portfolio-text">
+             <li class="portfolio__item">
+                <img class="portfolio__image" src="./img/img (18).png" alt="growing business">
+                <h3 class="portfolio__title">
                     Growing Business
                 </h3>
-                <p class="portfolio-title">
+                <p class="portfolio__subtitle">
                     Додаток
                 </p>
             </li>
@@ -136,16 +136,16 @@
 </section>
 
 <footer>
-    <div class="conteiner footer-content">
-        <div class="footer-info">
-            <p class="Logo"><span>Web</span>Studio</p>
-            <p class="Footer-Text">м.Київ, пр-т Лесі Українки, 26</p>
-            <p class="Footer-Text-1">info@devstudio.com</p>
-            <p class="Footer-Text-1">+38 096 111 11 11</p>
+    <div class="container footer__content">
+        <div class="footer__info">
+            <p class="footer__logo"><span>Web</span>Studio</p>
+            <p class="footer__text">м.Київ, пр-т Лесі Українки, 26</p>
+            <p class="footer__text footer__text--secondary">info@devstudio.com</p>
+            <p class="footer__text footer__text--secondary">+38 096 111 11 11</p>
         </div>
-        <div class="footer-newsletter">
+        <div class="footer__newsletter">
             <h3>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
-            <form class="newsletter-form">
+            <form class="footer__newsletter-form">
                 <input type="email" placeholder="E-mail" required>
                 <button type="submit">Підписатися</button>
             </form>
@@ -155,17 +155,17 @@
     <script src="./js/HW-modal.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.buttons button');
-            const portfolioCards = document.querySelectorAll('.portfolio-card');
+            const filterButtons = document.querySelectorAll('.portfolio-filter__button');
+            const portfolioCards = document.querySelectorAll('.portfolio__item');
 
             filterButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     const filter = this.getAttribute('data-filter');
 
                     // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    filterButtons.forEach(btn => btn.classList.remove('portfolio-filter__button--active'));
                     // Add active class to clicked button
-                    this.classList.add('active');
+                    this.classList.add('portfolio-filter__button--active');
 
                     // Filter cards
                     portfolioCards.forEach(card => {

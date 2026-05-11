@@ -3,7 +3,7 @@ header {
     padding: 24px 0;
 }
 
-header > .conteiner {
+header > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,7 +11,7 @@ header > .conteiner {
     flex-wrap: wrap;
 }
 
-.logo {
+.header__logo {
     font-family: "Raleway", sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
@@ -20,11 +20,11 @@ header > .conteiner {
     letter-spacing: 0.02em;
 }
 
-.logo span {
+.header__logo span {
     color: var(--alt-text-color);
 }
 
-.Nav-List {
+.header__nav-list {
     display: flex;
     align-items: center;
     gap: 32px;
@@ -33,7 +33,7 @@ header > .conteiner {
     list-style: none;
 }
 
-.Nav-Item a {
+.header__nav-item a {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-size: 0.95rem;
@@ -43,7 +43,7 @@ header > .conteiner {
     transition: color 0.2s ease;
 }
 
-.Nav-Item a::after {
+.header__nav-item a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -56,17 +56,17 @@ header > .conteiner {
     transition: transform 0.2s ease;
 }
 
-.Nav-Item a:hover::after,
-.Nav-Item a.active::after {
+.header__nav-item a:hover::after,
+.header__nav-link--active::after {
     transform: scaleX(1);
 }
 
-.Nav-Item a:hover,
-.Nav-Item a.active {
+.header__nav-item a:hover,
+.header__nav-link--active {
     color: var(--alt-text-color);
 }
 
-.contacts {
+.header__contacts {
     display: flex;
     align-items: center;
     gap: 32px;
@@ -75,19 +75,19 @@ header > .conteiner {
     list-style: none;
 }
 
-.contacts li {
+.header__contacts li {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.header-icon {
+.header__contact-icon {
     width: 18px;
     height: 18px;
     flex-shrink: 0;
 }
 
-.contacts a {
+.header__contacts a {
     font-family: "Roboto", sans-serif;
     font-size: 0.95rem;
     color: var(--text-color);
@@ -95,7 +95,7 @@ header > .conteiner {
     transition: color 0.2s ease;
 }
 
-.contacts a:hover {
+.header__contacts a:hover {
     color: var(--alt-text-color);
 }
 

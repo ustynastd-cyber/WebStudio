@@ -6,7 +6,7 @@
     display: grid;
 }
 
-.feature-list {
+.features__list {
     display: flex;
     flex-grow: 1;
     gap: 30px;
@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-.feature-item {
+.features__item {
     max-width: 270px;
     height: 80px;
     position: relative;
