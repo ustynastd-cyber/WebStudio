@@ -1,13 +1,13 @@
 header {
     background-color: #fff;
-    padding: 24px 0;
+    padding: 16px 0;
 }
 
 header > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 48px;
+    gap: 16px;
     flex-wrap: wrap;
 }
 
@@ -26,11 +26,10 @@ header > .container {
 
 .header__nav-list {
     display: flex;
-    align-items: center;
-    gap: 32px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
 }
 
 .header__nav-item a {
@@ -68,11 +67,10 @@ header > .container {
 
 .header__contacts {
     display: flex;
-    align-items: center;
-    gap: 32px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
 }
 
 .header__contacts li {
@@ -97,5 +95,32 @@ header > .container {
 
 .header__contacts a:hover {
     color: var(--alt-text-color);
+}
+
+@media (min-width: 480px) {
+    header > .container {
+        gap: 24px;
+    }
+
+    .header__nav-list,
+    .header__contacts {
+        width: auto;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 24px 0;
+    }
+
+    .header__nav-list {
+        gap: 32px;
+    }
+
+    .header__contacts {
+        gap: 32px;
+        justify-content: flex-end;
+    }
 }
 
