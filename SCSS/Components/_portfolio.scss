@@ -122,16 +122,27 @@
 
 .portfolio__list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-direction: column;
+    gap: 15px;
     margin: 0 auto;
     padding: 0 15px;
     justify-content: center;
 }
 
-@include max-width($breakpoint-md) {
+.portfolio__item {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio__image {
+    height: 250px;
+}
+
+@include min-width($breakpoint-md) {
     .portfolio__item {
         flex: 1 1 calc(50% - 15px);
+        max-width: calc(50% - 15px);
     }
     
     .portfolio__list {
@@ -139,20 +150,16 @@
     }
 }
 
-@include max-width($breakpoint-sm) {
-    .portfolio__item {
-        flex: 1 1 100%;
-        max-width: 100%;
-        height: auto;
+@include min-width($breakpoint-lg) {
+    .portfolio__list {
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    
+}
+
+@include min-width($breakpoint-sm) {
     .portfolio__image {
         height: 250px;
-    }
-    
-    .portfolio__list {
-        gap: 15px;
-        padding: 0 15px;
     }
     
     .portfolio__title {

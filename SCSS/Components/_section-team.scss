@@ -26,18 +26,23 @@
 
 .team__list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-@include max-width($breakpoint-md) {
+@include min-width($breakpoint-md) {
     .team__list {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
     }
-    
-    .team__member-image {
-        width: 100%;
+}
+
+@include min-width($breakpoint-lg) {
+    .team__list {
+        gap: 20px;
     }
 }

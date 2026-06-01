@@ -1,23 +1,28 @@
 .hero {
     background-color: #2F303A;
-    padding: 220px 0;
+    padding: 80px 0;
     text-align: center;
     width: 100%;
-    background: url(../img/Img\ \(19\).png);
-    background-size: cover;
-    background-position: center;
+    background: url(../img/Img\ \(19\).png) center/cover no-repeat;
     margin-bottom: 60px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+        background-image: url(../img/Img\ \(19\)@2x.png);
+        background-size: cover;
+    }
 }
 
 .hero__title {
     max-width: 696px;
-    margin: 0 auto 30px;
-    font-size: 44px;
+    margin: 0 auto 24px;
+    font-size: 24px;
     color: #ffffff;
     padding: 0 20px;
 }
 
-@include max-width($breakpoint-md) {
+@include min-width($breakpoint-sm) {
     .hero {
         padding: 120px 0;
     }
@@ -27,12 +32,22 @@
     }
 }
 
-@include max-width($breakpoint-sm) {
+@include min-width($breakpoint-md) {
     .hero {
-        padding: 80px 0;
+        padding: 160px 0;
     }
     
     .hero__title {
-        font-size: 24px;
+        font-size: 34px;
+    }
+}
+
+@include min-width($breakpoint-lg) {
+    .hero {
+        padding: 220px 0;
+    }
+    
+    .hero__title {
+        font-size: 44px;
     }
 }

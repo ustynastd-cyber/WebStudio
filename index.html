@@ -13,30 +13,52 @@
 <body>
     <header>
         <div class="container">
- <a href="#" class="header__logo"><span>Web</span>Studio</a>
-<nav>
-    <ul class="header__nav-list">
-        <li class="header__nav-item" ><a href="#" class="header__nav-link header__nav-link--active">Cтудіо</a></li>
-        <li class="header__nav-item" ><a href="./portfolio.html">Портфоліо</a></li>
-        <li class="header__nav-item" ><a href="#">Контакти</a></li>
-    
-    </ul>
-</nav>
-<ul class="header__contacts">
-            <li class="header__contact-item header__contact-item--phone">
-    <svg class="header__contact-icon">
-    <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
-    </svg>
-<a href="mailto:info@devstudio.com" class="header__contact-link header__contact-link--email">info@devstudio.com</a>
-</li>
-
-<li>
-            <svg class="header__contact-icon">
-    <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-    </svg>
-        <a href="tel:+380961111111" class="header__contact-link header__contact-link--phone">+38 096 111 11 11</a>
-    </li>
-    </ul>
+            <a href="#" class="header__logo"><span>Web</span>Studio</a>
+            <button class="header__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Відкрити меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header__nav" aria-label="Головна навігація">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--active">Cтудіо</a></li>
+                    <li class="header__nav-item"><a href="./portfolio.html" class="header__nav-link">Портфоліо</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="header__contacts">
+                <li class="header__contact-item header__contact-item--phone">
+                    <svg class="header__contact-icon">
+                        <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+                    </svg>
+                    <a href="mailto:info@devstudio.com" class="header__contact-link header__contact-link--email">info@devstudio.com</a>
+                </li>
+                <li>
+                    <svg class="header__contact-icon">
+                        <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>
+                    <a href="tel:+380961111111" class="header__contact-link header__contact-link--phone">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <div class="mobile-menu__panel">
+                <div class="mobile-menu__top">
+                    <a href="#" class="header__logo"><span>Web</span>Studio</a>
+                    <button class="mobile-menu__close" type="button" aria-label="Закрити меню">&times;</button>
+                </div>
+                <nav class="mobile-menu__nav" aria-label="Мобільне меню">
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link mobile-menu__link--active">Cтудіо</a></li>
+                        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__contacts">
+                    <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">info@devstudio.com</a>
+                    <a href="tel:+380961111111" class="mobile-menu__contact-link">+38 096 111 11 11</a>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -303,5 +325,6 @@
     </div>
    </footer>
     <script src="./js/HW-modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

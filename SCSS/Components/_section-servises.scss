@@ -2,13 +2,13 @@
 .services {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 40px 15px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(245, 248, 255, 0.95));
     border-radius: 14px;
 }
 
 .services__title {
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
     max-width: 696px;
     text-align: center;
     color: #1f2e55;
@@ -16,17 +16,18 @@
 
 .services__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     margin: 0 auto;
     padding: 0 15px;
-    gap: 20px;
 }
 
 .services__item {
-    flex: 1 1 calc(33.333% - 13.333px);
-    max-width: 370px;
-    min-width: 280px;
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: auto;
     height: 294px;
     position: relative;
     overflow: hidden;
@@ -42,26 +43,23 @@
     }
 }
 
-@include max-width($breakpoint-lg) {
-    .services__list {
-        padding: 0 15px;
-    }
-    
+@include min-width($breakpoint-md) {
     .services__item {
         flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
         min-width: 220px;
     }
 }
 
-@include max-width($breakpoint-md) {
+@include min-width($breakpoint-lg) {
     .services__item {
-        flex: 1 1 100%;
-        max-width: 100%;
-        min-width: 100%;
+        flex: 1 1 calc(33.333% - 13.333px);
+        max-width: 370px;
+        min-width: 280px;
     }
 }
 
-@include max-width($breakpoint-sm) {
+@include min-width($breakpoint-sm) {
     .services {
         padding: 40px 15px;
     }
